@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.saurabh.studentmanagement.NewStudentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_studentName"
+                style="@style/LayoutFrame"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:hint="@string/et_name"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:maxLines="1" />
+            <EditText
+               style="@style/LayoutFrame"
+                android:id="@+id/et_school"
+                android:layout_marginTop="10dp"
+                android:hint="School"
+                android:inputType="text"
+                android:maxLines="1"
+                android:maxLength="40"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="#D3D3D3"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/et_rollNo" />
+
+                <TextView
+                    android:id="@+id/tv_rollNo"
+                    style="@style/LayoutFrame"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="8dp" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_email"
+                style="@style/LayoutFrame"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="@string/et_email"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:maxLines="1" />
+
+            <RadioGroup
+                android:id="@+id/rdgrp_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/radio_female"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rd_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/radio_male"
+                    android:textSize="15sp" />
+
+
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/ckb_toc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tv_toc"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:clickable="true"
+                android:text="@string/btn_add"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+

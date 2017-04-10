@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">StudentManagement</string>
+    <string name="btn_create">Add Student</string>
+    <string name="tv_studentName">Name: </string>
+    <string name="et_name">Name</string>
+    <string name="et_rollNo">Roll No</string>
+    <string name="tv_studentRollNo">Roll No:</string>
+    <string name="et_gender">Gender</string>
+    <string name="et_email">Email</string>
+    <string name="tv_toc">Privacy and Terms and Conditions</string>
+    <string name="btn_add">Add</string>
+    <string name="radio_female">Female</string>
+    <string name="radio_male">Male</string>
+
+        <string-array name="sort_items">
+            <item>Sort By Roll No</item>
+            <item>Sort By Name</item>
+        </string-array>
+
+
+</resources>
